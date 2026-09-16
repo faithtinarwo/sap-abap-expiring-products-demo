@@ -1,0 +1,4 @@
+@EndUserText.label: 'Ready Orders Service Definition'
+define service ZSD_READYORDERS {
+  expose ZC_ReadyOrders as ReadyOrders;
+}
