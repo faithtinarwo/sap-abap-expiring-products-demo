@@ -1,0 +1,21 @@
+@Metadata.layer: #CORE
+annotate entity ZC_READYORDERS with
+{
+  @UI.facet: [
+    {
+      id: 'OrderDetails',
+      label: 'Order Details',
+      type: #FIELDGROUP_REFERENCE,
+      targetQualifier: 'ORDER_INFO'
+    }
+  ]
+
+  @UI.fieldGroup: [{ position: 10, qualifier: 'ORDER_INFO', label: 'Dish Name' }]
+  dish_name;
+
+  @UI.fieldGroup: [{ position: 20, qualifier: 'ORDER_INFO', label: 'Table Number' }]
+  table_number;
+
+  @UI.fieldGroup: [{ position: 30, qualifier: 'ORDER_INFO', label: 'Status' }]
+  status;
+}
